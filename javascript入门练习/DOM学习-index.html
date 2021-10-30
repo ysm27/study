@@ -7,13 +7,23 @@
 </head>
 <body>
   <div id='me'></div>
+  <Button></Button>
   <script>
     // getElementById
     let MeNode = document.getElementById('me')
+    // innerText
+    MeNode.innerText = '我是谁'
+    MeNode.setAttribute("class", "me");
+    // innerHTML
+    MeNode.innerHTML = '<p>我</p>'
     // createElement
     var pNode=document.createElement("p");
     // appendChild
     MeNode.appendChild(pNode)
+    // setAttribute
+    var b = document.querySelector("button");
+    b.setAttribute("name", "helloButton");
+    b.setAttribute("disabled", "");
   </script>
 </body>
 </html>
